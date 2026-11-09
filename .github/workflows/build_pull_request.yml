@@ -1,14 +1,15 @@
 name: Build pull request
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - dev
-  pull_request:
-    branches:
-      - dev
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - dev
+#   pull_request:
+#     branches:
+#       - dev
+# 
 jobs:
   release:
     name: Build

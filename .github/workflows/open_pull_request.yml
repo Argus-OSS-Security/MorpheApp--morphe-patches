@@ -1,11 +1,12 @@
 name: Open a PR to main
 
-on:
-  push:
-    branches:
-      - dev
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - dev
+#   workflow_dispatch:
+# 
 env:
   MESSAGE: Merge branch `${{ github.head_ref || github.ref_name }}` to `main`
 
